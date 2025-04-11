@@ -59,6 +59,7 @@
         ".icon-search {display: none;}"
       ],
       "settings": {
+        "logo": "shopify://shop_images/APPLE_WATCH_BANDS_6_b2c9faf7-776e-43a2-ad91-7838760fc7a0.png",
         "logo_height": 82,
         "mobile_logo_height": 56,
         "logo_position": "middle-left",
