@@ -1976,7 +1976,8 @@
           "money_order": "حوالة بريدية",
           "cash_on_delivery": "الدفع عند الاستلام (COD)",
           "bank_deposit": "وديعة بنكية",
-          "manual": "يدوي"
+          "manual": "يدوي",
+          "gift_card": "بطاقة هدية"
         },
         "card_payment_details": "تنتهي بـ {{lastDigits}} - {{formattedTransactionAmount}}",
         "gift_card_payment_details": "تنتهي بـ {{lastDigits}} - {{formattedTransactionAmount}}",
@@ -2001,7 +2002,10 @@
           "auth": "المصادقة:",
           "aid": "يساعد:",
           "source": "مصدر:"
-        }
+        },
+        "status_in_review": "الدفع مستحق بعد المراجعة",
+        "status_unpaid": "الدفع مستحق في {{date}}",
+        "title": "قسط"
       },
       "paid_with_shop_pay_installments_card": {
         "paid_with_shop_pay_installments": "تم الدفع عن طريق أقساط Shop Pay",
@@ -2102,10 +2106,144 @@
       },
       "cash_rounding": "تقريب النقدية",
       "adjusted_payment": "الدفع المعدل",
-      "adjusted_total": "الإجمالي المعدل"
+      "adjusted_total": "الإجمالي المعدل",
+      "shipment_timeline": {
+        "expand_events_label": "إظهار التفاصيل",
+        "expand_events_accessibility_label": "إظهار تفاصيل شحن الطلب",
+        "hide_events_label": "إخفاء التفاصيل",
+        "hide_events_accessibility_label": "إخفاء تفاصيل شحن الطلب"
+      },
+      "addresses_section_title": "الفواتير والشحن",
+      "order_details": "تفاصيل الطلب",
+      "order_details_skeleton_accessibility_label": "قم بتسجيل الدخول لعرض كافة تفاصيل الطلب.",
+      "billing_address": "عنوان الفاتورة",
+      "card_ending_with": "تنتهي بـ {{lastDigits}}",
+      "contact": "اتصال",
+      "contact_information": "معلومات الاتصال",
+      "company": "شركة",
+      "fully_refunded_label": "تم استرداد المبلغ",
+      "group_title_label": "جزء من: {{groupTitle}}",
+      "grouped_view_components": {
+        "expand_line_items": "عرض {{count}} عنصرًا",
+        "collapse_line_items": "إخفاء {{count}} عنصرًا",
+        "line_item_summary_list_accessibility_label": "العناصر الموجودة في حزمة {{productTitle}}"
+      },
+      "discount": "تخفيض",
+      "hide_items": "إخفاء العناصر",
+      "loading": "تحميل تفاصيل الطلب",
+      "loading_finished_accessibility_message": "تم تحميل تفاصيل الطلب",
+      "location": "موقع",
+      "image_gallery": {
+        "next": "إظهار العناصر التالية",
+        "previous": "إظهار العناصر السابقة",
+        "load_more_items": {
+          "one": "تحميل {{count}} عناصر إضافية",
+          "other": "تحميل {{count}} عناصر إضافية"
+        }
+      },
+      "mobile_summary_toggle_button": {
+        "open": "إظهار ملخص الطلب",
+        "closed": "إخفاء ملخص الطلب"
+      },
+      "no_data": "لا أحد",
+      "no_data_provided_accessibility_label": "{{fieldName}} فارغ",
+      "not_applicable": "غير متوفر",
+      "paid_amount": "مدفوع",
+      "partially_refunded_label": "تم استرداد المبلغ جزئيًا"
     },
     "addresses": {
       "add_button": "إضافة عنوان"
+    },
+    "orders": {
+      "order_status": {
+        "tracking_number": {
+          "other": "أرقام التتبع"
+        },
+        "on_its_way_label": "في طريقها",
+        "on_its_way_title": "شحنتك في الطريق",
+        "out_for_delivery_label": "خارج للتسليم",
+        "out_for_delivery_title": "شحنتك جاهزة للتسليم",
+        "resume_tracking": "تتبع السيرة الذاتية",
+        "submitted_label": "مُقَدَّم",
+        "submitted_description": "مراجعة تفاصيل الطلب والدفع.",
+        "there_was_a_problem_label": "كانت هناك مشكلة",
+        "track_shipment": "تتبع الشحنة",
+        "request_return": "طلب الإرجاع",
+        "view_order_for_details": "عرض الطلب للحصول على التفاصيل",
+        "external_promise_manage_button_label": {
+          "buy_with_prime": "إدارة على أمازون"
+        },
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "الإدارة مع أمازون",
+            "new_window_disclaimer": "(يفتح نافذة جديدة)"
+          }
+        },
+        "delivery_promise_v2": {
+          "promise_line": {
+            "shop_promise_brand_label": "التسليم مضمون بواسطة",
+            "external_promise_brand_label": "التسليم عن طريق",
+            "not_delivered_by_label": "تم التسليم بعد {{date}}",
+            "delivery_guarantee_expired_label": "انتهت صلاحية ضمان التسليم",
+            "modal_accessibility_button_label": "تفاصيل وعد التسليم",
+            "download_shop_app_button_label": "تنزيل المتجر للتتبع",
+            "track_with_shop_button_label": "تتبع مع المتجر",
+            "claim_shop_cash_button_label": "المطالبة بأموال المتجر"
+          },
+          "details_modal": {
+            "title": "ضمان التسليم",
+            "active_delivery_guarantee_label": "التسليم بحلول {{date}}",
+            "expired_delivery_guarantee_description": "انتهت صلاحية ضمان Shop Promise لمدة 30 يومًا لهذا الطلب.",
+            "expired_badge_label": "منتهي الصلاحية",
+            "order_includes_guarantees_label": "يتضمن طلبك {{deliveryAgreementsCount}} ضمانًا",
+            "order_includes_guarantees_description": "يضمن لك Shop Promise توصيلًا سريعًا وموثوقًا. اطلب استرداد النقود من Shop Cash إذا وصل طلبك بعد {{date}} .",
+            "delivered_after_label": "تم التسليم بعد {{date}}",
+            "delivered_after_description": "نظرًا لأن طلبك وصل متأخرًا، فأنت مؤهل للمطالبة بـ {{amount}} نقدًا من المتجر.",
+            "claimed_shop_cash_description": "نظرًا لأن هذا الطلب وصل متأخرًا، فقد قمت بالمطالبة بمبلغ {{amount}} نقدًا من المتجر.",
+            "eligible_to_claim_shop_cash_description": "نظرًا لأن طلبك وصل متأخرًا، فأنت مؤهل للمطالبة بـ {{amount}} نقدًا من المتجر.",
+            "learn_more_button_label": "يتعلم أكثر",
+            "claim_shop_cash_button_label": "المطالبة بأموال المتجر",
+            "view_balance_in_shop_button_label": "عرض الرصيد في المتجر",
+            "scan_to_claim_shop_cash_label": "امسح ضوئيًا للمطالبة بـ {{amount}} نقدًا من المتجر"
+          }
+        },
+        "delivery_promise": {
+          "promise_line": {
+            "single_brand_label": "التسليم مدعوم من",
+            "mixed_brands_label": "التسليم مضمون",
+            "not_delivered_by_label": "لم يتم التسليم بحلول {{date}}",
+            "modal_accessibility_button_label": "تفاصيل وعد التسليم"
+          },
+          "claim_shop_cash_cta": {
+            "has_shop_app_label": "اطلب نقدًا من متجرك",
+            "no_shop_app_label": "{{appDownloadLink}} للمطالبة بأموال المتجر",
+            "download_shop_app_label": "تنزيل المتجر"
+          },
+          "details_modal": {
+            "title": "التسليم مدعوم من",
+            "modal_accessiblity_label": "تفاصيل وعد التسليم",
+            "delivery_guarantee_label": "ضمان التسليم",
+            "delivery_by_label": "التسليم بحلول {{date}}",
+            "delivery_guaranteed_by_label": "التسليم مضمون بحلول {{date}}",
+            "shop_cash_claim": {
+              "may_be_eligible_label": "يضمن لك Shop Promise توصيلًا سريعًا وموثوقًا. اطلب استرداد النقود من Shop Cash إذا تأخر طلبك.",
+              "may_be_eligible_not_authorized_label": "قد تكون مؤهلاً للحصول على رصيد نقدي من المتجر بسبب تأخر وصول هذا الطلب. سجّل الدخول لعرض التفاصيل.",
+              "redeemed_label": "لقد قمت بالفعل بالمطالبة بـ Shop Cash لأن هذا الطلب وصل متأخرًا.",
+              "expired_label": "لا يحق لهذا الطلب المطالبة بالتسليم المتأخر لأن ضمان الثلاثين يومًا قد انتهى.",
+              "no_shop_cash_label": "لا يحق لهذا الطلب المطالبة بالتسليم المتأخر لأنه لم يتم دفعه عبر Shop Pay.",
+              "no_longer_guaranteed_label": "لم تعد هذه العناصر مدعومة بضمان التسليم.",
+              "claim_shop_cash_title": "امسح ضوئيًا للمطالبة بـ {{amount}} في Shop Cash",
+              "claim_shop_cash_description": "بإمكانك استخدام رصيدك النقدي في المتجر في عمليات الشراء المستقبلية في تطبيق المتجر."
+            }
+          }
+        }
+      },
+      "status_mark_as_delivered": "وضع علامة على أنه تم التسليم",
+      "fulfillment_status_title": "حالة الإنجاز: {{status}}",
+      "buy_again": "اشتري مرة أخرى",
+      "buy_again_accessibility_label": "قم بالشراء مرة أخرى للطلب {{orderId}}",
+      "manage": "يدير",
+      "manage_accessiblity_label": "إدارة الطلب {{orderId}}"
     }
   },
   "sections": {
