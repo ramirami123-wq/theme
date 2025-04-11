@@ -2319,7 +2319,8 @@
       "title": "نتائج البحث",
       "search_for": "ابحث عن \" {{ terms }} \"",
       "suggestions": "اقتراحات",
-      "pages": "الصفحات"
+      "pages": "الصفحات",
+      "empty": "لم يتم العثور على نتائج"
     },
     "cart": {
       "cart": "عربة التسوق"
@@ -2422,6 +2423,139 @@
       "tracking_url": "رابط التتبع",
       "tracking_company": "الناقل",
       "tracking_number": "عدد تتبع"
+    }
+  },
+  "blogs": {
+    "article": {
+      "all_tags": "الجميع",
+      "read_more_title": "اقرأ المزيد: {{ title }}",
+      "read_more": "اقرأ المزيد",
+      "comments": {
+        "one": "{{ count }} تعليق",
+        "other": "{{ count }} تعليقات"
+      },
+      "moderated": "يرجى ملاحظة أنه يجب الموافقة على التعليقات قبل نشرها.",
+      "comment_form_title": "اترك تعليقا",
+      "name": "اسم",
+      "email": "بريد إلكتروني",
+      "message": "تعليق",
+      "post": "نشر التعليق",
+      "back_to_blog": "العودة إلى {{ title }}",
+      "share": "شارك هذه المقالة",
+      "success": "تم نشر تعليقك بنجاح! شكرًا لك!",
+      "success_moderated": "تم نشر تعليقك بنجاح. سننشره قريبًا، لأن مدونتنا تخضع لإشرافنا."
+    }
+  },
+  "onboarding": {
+    "product_title": "مثال على عنوان المنتج",
+    "collection_title": "اسم مجموعتك",
+    "no_content": "لا يحتوي هذا القسم حاليًا على أي محتوى. أضف محتوىً إليه باستخدام الشريط الجانبي."
+  },
+  "products": {
+    "product": {
+      "color_swatch_trigger": "لون",
+      "size_chart_trigger": "مقاس",
+      "size_chart": "مساعدة حول مقاسك",
+      "add_to_cart": "أضف إلى السلة",
+      "add_set_to_cart": "أضف المجموعة إلى سلة التسوق",
+      "description": "وصف",
+      "quick_view": "نظرة سريعة",
+      "on_sale": "أُوكَازيُون",
+      "product_variants": "متغيرات المنتج",
+      "media": {
+        "gallery_viewer": "عارض المعرض",
+        "load_image": "تحميل الصورة {{ index }} في عرض المعرض",
+        "load_model": "تحميل نموذج ثلاثي الأبعاد {{ index }} في عرض المعرض",
+        "load_video": "تشغيل الفيديو {{ index }} في عرض المعرض",
+        "image_available": "الصورة {{ index }} متاحة الآن في عرض المعرض",
+        "open_media": "افتح الوسائط {{ index }} في النافذة المنبثقة",
+        "play_model": "تشغيل عارض ثلاثي الأبعاد",
+        "play_video": "تشغيل الفيديو"
+      },
+      "quantity": {
+        "label": "كمية",
+        "input_label": "الكمية لـ {{ product }}",
+        "increase": "زيادة الكمية لـ {{ product }}",
+        "decrease": "تقليل الكمية لـ {{ product }}",
+        "minimum_of": "الحد الأدنى من {{ quantity }}",
+        "maximum_of": "الحد الأقصى لـ {{ quantity }}",
+        "multiples_of": "زيادات {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> في سلة التسوق"
+      },
+      "pickup_availability": {
+        "view_store_info": "عرض معلومات المتجر",
+        "check_other_stores": "التحقق من التوفر في المتاجر الأخرى",
+        "pick_up_available": "الاستلام متاح",
+        "pick_up_available_at_html": "الاستلام متاح في <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "الاستلام غير متاح حاليًا في <span class=\"color-foreground\">{{ location_name }}</span>",
+        "unavailable": "لم نتمكن من تحميل توفر الاستلام",
+        "refresh": "ينعش"
+      },
+      "price": {
+        "from_price_html": "من {{ price }}",
+        "regular_price": "السعر العادي",
+        "sale_price": "سعر البيع",
+        "unit_price": "سعر الوحدة"
+      },
+      "inventory": {
+        "in_stock_label": "متوفر في المخزون، جاهز للشحن",
+        "stock_label_html": {
+          "one": "اسرع، فقط <strong>{{ count }}</strong> عنصر متبقي في المخزون!",
+          "other": "اسرع، فقط <strong>{{ count }}</strong> عناصر متبقية في المخزون!"
+        },
+        "will_not_ship_until": "جاهز للشحن {{ date }}",
+        "will_be_in_stock_after": "عاد إلى المخزون {{ date }}",
+        "waiting_for_stock": "المخزون في الطريق"
+      },
+      "share": "شارك هذا المنتج",
+      "view": "عرض المنتج",
+      "sold_out": "نفذ",
+      "unavailable": "غير متاح",
+      "pre_order": "النظام السابق",
+      "vendor": "بائع",
+      "video_exit_message": "{{ title }} يفتح مقطع الفيديو على كامل الشاشة في نفس النافذة.",
+      "view_full_details": "عرض التفاصيل الكاملة",
+      "view_info": "مزيد من المعلومات",
+      "view_images": "عرض الصور",
+      "xr_button": "عرض في مساحتك",
+      "xr_button_label": "عرض في مساحتك، وتحميل العنصر في نافذة الواقع المعزز",
+      "include_taxes": "الضريبة متضمنة.",
+      "choose_options": "اختر الخيارات",
+      "choose_product_options": "اختر الخيارات لـ {{ product_name }}"
+    },
+    "modal": {
+      "label": "معرض الوسائط"
+    },
+    "facets": {
+      "filter_and_operator_subtitle": "تطابق الكل",
+      "apply": "يتقدم",
+      "clear": "واضح",
+      "clear_all": "مسح الكل",
+      "from": "من",
+      "filter_and_sort": "التصفية والفرز",
+      "filter_by_label": "فلتر",
+      "filter_button": "فلتر",
+      "filters_selected": {
+        "one": "تم اختيار {{ count }}",
+        "other": "تم اختيار {{ count }}"
+      },
+      "max_price": "أعلى سعر هو {{ price }}",
+      "price_html": "السعر: {{ price_min }} – {{ price_max }}",
+      "product_count": {
+        "one": "{{ product_count }} من {{ count }} منتج",
+        "other": "{{ product_count }} من {{ count }} منتجًا"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} منتج",
+        "other": "{{ count }} منتجات"
+      },
+      "reset": "إعادة ضبط",
+      "sort_button": "نوع",
+      "sort_by_label": "فرز حسب",
+      "to": "ل",
+      "clear_filter": "مسح الفلتر",
+      "show_more": "إظهار المزيد",
+      "show_less": "إظهار أقل"
     }
   }
 }
