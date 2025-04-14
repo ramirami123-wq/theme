@@ -309,7 +309,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "products",
+        "collection": "products-1",
         "products_to_show": 4,
         "horizontal_scroll": false,
         "show_view_all": true,
