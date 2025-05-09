@@ -31,11 +31,21 @@
             "text_size": 13,
             "link": ""
           }
+        },
+        "announcement_dLeg4T": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "text_on_mobile": "",
+            "text_size": 13,
+            "link": ""
+          }
         }
       },
       "block_order": [
         "announcement_BPeB4C",
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_dLeg4T"
       ],
       "settings": {
         "only_homepage": false,
